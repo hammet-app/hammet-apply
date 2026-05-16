@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Brand colours ── */
+  --color-purple-dark:   #3B0764;
+  --color-purple:        #5B21B6;
+  --color-purple-mid:    #7C3AED;
+  --color-purple-light:  #EDE9FE;
+  --color-purple-hover:  #4C1D95;
+  --color-cyan:          #06B6D4;
+  --color-cyan-light:    #CFFAFE;
+  --color-cyan-dark:     #0891B2;
+
+  /* ── Semantic ── */
+  --color-success:       #10B981;
+  --color-success-light: #D1FAE5;
+  --color-success-dark:  #065F46;
+  --color-warning:       #F59E0B;
+  --color-warning-light: #FEF3C7;
+  --color-warning-dark:  #92400E;
+  --color-danger:        #EF4444;
+  --color-danger-light:  #FEE2E2;
+  --color-danger-dark:   #DC2626;
+
+  /* ── Surfaces ── */
+  --color-bg-page:       #F5F3FF;
+  --color-bg-card:       #FFFFFF;
+  --color-bg-sidebar:    #3B0764;
+  --color-border:        #E5E7EB;
+
+  /* ── Text ── */
+  --color-text-primary:   #1E1B4B;
+  --color-text-secondary: #6B7280;
+  --color-text-muted:     #A1A1AA;
+
+  /* ── Fonts ── */
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-head: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+
+  /* ── Radius ── */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  20px;
+  --radius-full: 9999px;
+
+  /* ── Sidebar / topbar dimensions ── */
+  --sidebar-width: 240px;
+  --topbar-height: 56px;
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-bg-page);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 9999px; }
+  ::-webkit-scrollbar-thumb:hover { background: #D1D5DB; }
+}
+
+:root {
+  --font-head: 'Nunito', sans-serif;
+  --font-body: 'Atkinson Hyperlegible', sans-serif;
+}
