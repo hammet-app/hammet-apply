@@ -231,7 +231,7 @@ export default function CareersPage() {
           </h1>
 
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 16, lineHeight: 1.7, maxWidth: 500, margin: "0 auto" }}>
-            Paid, in-person roles for SIWES Interns open to working in Ibadan.
+            In-person roles for SIWES Interns open to working in Ibadan.
             Creative, hardworking, and excited about what we&apos;re building? Apply below.
           </p>
         </div>
@@ -243,7 +243,7 @@ export default function CareersPage() {
           <RoleCard emoji="🎬" title="Research Writer" spots={1} />
           <RoleCard emoji="🎬" title="Graphic Designer" spots={1} />
           <RoleCard emoji="🎬" title="Front end Developer" spots={1} />
-          <RoleCard emoji="🎬" title="Badckend Developer" spots={1} />
+          <RoleCard emoji="🎬" title="Backend Developer" spots={1} />
         </div>
 
         {/* Requirements strip */}
