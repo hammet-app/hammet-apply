@@ -1,7 +1,14 @@
-export type Role = "Video Editor" | "Social Media Manager" | "";
+export type Role = 
+  "Video Editor" | 
+  "Social Media Manager" | 
+  "Research Writer" | 
+  "Graphic Designer" |
+  "Frontend Developer" |
+  "Backend Developer" |
+  "";
 
 export type ApplyForm = {
-fullName: string;
+  fullName: string;
   email: string;
   phone_number: string;
   role: Role;
